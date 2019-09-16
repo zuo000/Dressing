@@ -1,0 +1,75 @@
+.cell{
+    width: 1em;  
+    height: 1em;
+    font-size:120px;
+    overflow: hidden;
+    position:absolute;
+    left:50%;
+    margin:-0.5em 0 0  -0.5em;
+    opacity:0;
+    animation:go 6s;
+    transform-origin:left bottom;
+}
+.num{
+    position:absolute;
+    width: 1em;
+    line-height: 1em;  
+    text-align: center;
+    animation:run 6s steps(6);
+}
+@keyframes run{
+    0%{top:0;}
+    100%{top:-6em;}
+}
+@keyframes go{
+  0%   {opacity:1;}
+  84%  {opacity:1;transform:rotate(0deg) scale(1);}
+  100% {opacity:0;transform:rotate(360deg) scale(.01);}
+}
+.video {
+  width: 800;
+  height: 500;
+}
+video::-internal-media-controls-download-button {
+      display:none;
+}
+video::-webkit-media-controls-enclosure {
+      overflow:hidden;
+}
+video::-webkit-media-controls-panel {
+      width: calc(100% + 30px);
+}
+.blink_wrapper{
+  color: #666;
+  margin-top: 30px;
+}
+@keyframes blink{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+    0% {opacity: 1; }
+    100% { opacity: 0;}
+}
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.blink{
+    color: #ff0000;
+    animation: blink 2s linear infinite;
+    -webkit-animation: blink 2s linear infinite;
+    -moz-animation: blink 2s linear infinite;
+    -ms-animation: blink 2s linear infinite;
+    -o-animation: blink 2s linear infinite;
+}
