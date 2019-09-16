@@ -4,7 +4,7 @@ This is a module for [MagicMirror²](https://github.com/MichMich/MagicMirror), t
 ## Installation
 
 1. Navigate into your MagicMirror `modules` folder and execute<br>
-`git clone https://github.com/zuo000/MMM-Dressing.git`.
+`git clone https://github.com/zuo000/Dressing.git`.
 2. Enter the new `MMM-Dressing` directory and execute `npm install`.
 
 ## Configuration
